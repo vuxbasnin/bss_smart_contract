@@ -537,7 +537,7 @@ export class Vault__factory extends ContractFactory {
     return super.deploy(overrides || {}) as Promise<
       Vault & {
         deploymentTransaction(): ContractTransactionResponse;
-      }
+      }   
     >;
   }
   override connect(runner: ContractRunner | null): Vault__factory {
