@@ -6,7 +6,6 @@ chai.use(chaiAsPromised);
 import { keccak256 } from 'ethers';
 import { HardhatEthersSigner } from '@nomicfoundation/hardhat-ethers/signers';
 import { BSSToken, Vault } from '../typechain-types';
-import { CustomError } from 'hardhat/internal/hardhat-network/stack-traces/model';
 
 function parseEther(amount: Number) {
     return ethers.parseUnits(amount.toString(), 0);
