@@ -5,7 +5,7 @@ var config: any;
 
 export async function initConfig() {
     console.log('init');
-    config = JSON.parse((await fs.readFile('../config.json')).toString());
+    config = JSON.parse((await fs.readFile('./config.json')).toString());
     return config;
 }
 
@@ -16,7 +16,7 @@ export function getConfig() {
 export function setConfig(_path: string, _val: string) {
     console.log(config);
     const splitPath = _path.split('.').reverse();
-
+    console.log("splitPath: ", splitPath);
     var ref = config;
     while (splitPath.length > 1) {
         let key = splitPath.pop();
@@ -34,5 +34,5 @@ export function setConfig(_path: string, _val: string) {
 
 export async function updateConfig() {
     console.log('write: ', JSON.stringify(config));
-    return fs.writeFile('../config.json', JSON.stringify(config, null, 2));
+    return fs.writeFile('./config.json', JSON.stringify(config, null, 2));
 }
