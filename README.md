@@ -4,9 +4,9 @@
   - Create project
   - Install hardhat, hardhat-toolbox, openzeppelin
   - Create => Test => Deploy to testnet => Verify => Interact with smart contract
-  - Create Vault smart contract to interact with withdraw
-  - Create file config.json to show history deploy
-  - Create file config.ts to update for config.json
+  - Create Vault smart contract to interact with withdraw from BSSToken smart contract
+  - Create file config.ts to show history deploy to update for config.json
+  - Deploy to update config.json => verify
 
 *Note:
   - Use smart contract Vault as ATM Machine to withdraw: NEVER ACCEPT USER DIRECT INTERACTION WITH FUNCTION WITHDRAW OF SMARTCONTRACT
