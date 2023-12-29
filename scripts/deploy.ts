@@ -5,7 +5,6 @@ async function main() {
     //setup deploy
     await Config.initConfig();
     const network = hardhatArguments.network ? hardhatArguments.network : 'dev';
-
     const [deployer] = await ethers.getSigners();
     console.log('deploy from address: ', deployer.address);
 
@@ -20,6 +19,8 @@ async function main() {
     const vault = await Vault.deploy();
     console.log('Vault address: ', await vault.getAddress());
     Config.setConfig(network + '.Vault', await vault.getAddress());
+
+    await Config.updateConfig()
 }
 
 main()

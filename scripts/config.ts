@@ -13,10 +13,10 @@ export function getConfig() {
     return config;
 }
 
-export function setConfig(_path: string, _val: string) {
+export function setConfig(path: string, val: string) {
     console.log(config);
-    const splitPath = _path.split('.').reverse();
-    console.log("splitPath: ", splitPath);
+    const splitPath = path.split('.').reverse();
+
     var ref = config;
     while (splitPath.length > 1) {
         let key = splitPath.pop();
@@ -29,7 +29,7 @@ export function setConfig(_path: string, _val: string) {
     }
 
     let key = splitPath.pop();
-    if (key) ref[key] = _val;
+    if (key) ref[key] = val;
 }
 
 export async function updateConfig() {

@@ -12,7 +12,7 @@ module.exports = {
         },
         ethtest: {
             url: `https://sepolia.infura.io/v3/${process.env.ALCHEMY_API_KEY}`,
-            accounts: [process.env.GOERLI_PRIVATE_KEY],
+            accounts: [process.env.PRIV_KEY],
         },
     },
     etherscan: {

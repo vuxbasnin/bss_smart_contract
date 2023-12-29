@@ -23,15 +23,10 @@ describe('Vault', function () {
     beforeEach(async () => {
         await ethers.provider.send('hardhat_reset', []);
         [owner, alice, bob, carol] = await ethers.getSigners();
-
         const Vault = await ethers.getContractFactory('Vault', owner);
         vault = await Vault.deploy();
-        console.log('NINVB ' + (await vault.getAddress()));
-
         const Token = await ethers.getContractFactory('BSSToken', owner);
         token = await Token.deploy();
-        console.log('NINVB ' + (await token.getAddress()));
-
         await vault.setToken(await token.getAddress());
     });
 

@@ -1,6 +1,9 @@
 {
-    "dev": {},
-    "bsctest": {},
-    "ethtest": {},
-    "main": {}
+  "dev": {},
+  "bsctest": {
+    "BSSToken": "0x8c22ca2e9Fe108619058d5B02070aC603D7eD886",
+    "Vault": "0x837d1443508A75Fd467F31DEEF9724d50FBdf062"
+  },
+  "ethtest": {},
+  "main": {}
 }
