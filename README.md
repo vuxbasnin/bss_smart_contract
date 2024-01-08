@@ -7,6 +7,7 @@
   - Create Vault smart contract to interact with withdraw from BSSToken smart contract
   - Create file config.ts to show history deploy to update for config.json
   - Deploy to update config.json => verify
+  - Deploy USDT, BSSCrowdSale => verify
 
 *Note:
   - Use smart contract Vault as ATM Machine to withdraw: NEVER ACCEPT USER DIRECT INTERACTION WITH FUNCTION WITHDRAW OF SMARTCONTRACT

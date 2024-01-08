@@ -122,9 +122,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Strings__factory>;
     getContractFactory(
+      name: "BSSCrowdSale",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BSSCrowdSale__factory>;
+    getContractFactory(
+      name: "BSSCrowSale",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BSSCrowSale__factory>;
+    getContractFactory(
       name: "BSSToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.BSSToken__factory>;
+    getContractFactory(
+      name: "USDT",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.USDT__factory>;
     getContractFactory(
       name: "Vault",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -266,10 +278,25 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Strings>;
     getContractAt(
+      name: "BSSCrowdSale",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BSSCrowdSale>;
+    getContractAt(
+      name: "BSSCrowSale",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BSSCrowSale>;
+    getContractAt(
       name: "BSSToken",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.BSSToken>;
+    getContractAt(
+      name: "USDT",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.USDT>;
     getContractAt(
       name: "Vault",
       address: string | ethers.Addressable,
@@ -385,9 +412,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Strings>;
     deployContract(
+      name: "BSSCrowdSale",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BSSCrowdSale>;
+    deployContract(
+      name: "BSSCrowSale",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BSSCrowSale>;
+    deployContract(
       name: "BSSToken",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.BSSToken>;
+    deployContract(
+      name: "USDT",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.USDT>;
     deployContract(
       name: "Vault",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -529,10 +568,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Strings>;
     deployContract(
+      name: "BSSCrowdSale",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BSSCrowdSale>;
+    deployContract(
+      name: "BSSCrowSale",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BSSCrowSale>;
+    deployContract(
       name: "BSSToken",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.BSSToken>;
+    deployContract(
+      name: "USDT",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.USDT>;
     deployContract(
       name: "Vault",
       args: any[],
