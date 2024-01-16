@@ -60,10 +60,8 @@ export type { ShortStrings } from "./@openzeppelin/contracts/utils/ShortStrings"
 export { ShortStrings__factory } from "./factories/@openzeppelin/contracts/utils/ShortStrings__factory";
 export type { Strings } from "./@openzeppelin/contracts/utils/Strings";
 export { Strings__factory } from "./factories/@openzeppelin/contracts/utils/Strings__factory";
-export type { BSSCrowdSale } from "./contracts/BSSCrowdSale.sol/BSSCrowdSale";
-export { BSSCrowdSale__factory } from "./factories/contracts/BSSCrowdSale.sol/BSSCrowdSale__factory";
-export type { BSSCrowSale } from "./contracts/BSSCrowdSale.sol/BSSCrowSale";
-export { BSSCrowSale__factory } from "./factories/contracts/BSSCrowdSale.sol/BSSCrowSale__factory";
+export type { BSSCrowdSale } from "./contracts/BSSCrowdSale";
+export { BSSCrowdSale__factory } from "./factories/contracts/BSSCrowdSale__factory";
 export type { BSSToken } from "./contracts/BSSToken";
 export { BSSToken__factory } from "./factories/contracts/BSSToken__factory";
 export type { USDT } from "./contracts/USDT";

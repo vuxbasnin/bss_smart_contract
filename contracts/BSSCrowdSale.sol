@@ -53,11 +53,11 @@ contract BSSCrowdSale is Ownable {
         //check smart contract enought token to sale
         require(
             token.balanceOf(address(this)) >= amount,
-            "Insufficient account balance!"
+            "Insufficient account balance token!"
         );
         require(
             msg.sender.balance >= bnbAmount,
-            "Insufficient account balance!"
+            "Insufficient account balance bnb!"
         );
         payable(wallet).transfer(bnbAmount);
         SafeERC20.safeTransfer(token, msg.sender, amount);
@@ -68,13 +68,13 @@ contract BSSCrowdSale is Ownable {
         uint256 amount = getTokenAmountUSDT(_usdtAmount);
         require(
             msg.sender.balance >= _usdtAmount,
-            "Insufficient account balance!"
+            "Insufficient account balance usdt!"
         );
         require(amount > 0, "Amount is zero!");
         //check smart contract enought token to sale
         require(
             token.balanceOf(address(this)) >= amount,
-            "Insufficient account balance!"
+            "Insufficient account balance token!"
         );
         SafeERC20.safeTransferFrom(token, msg.sender, wallet, _usdtAmount);
         SafeERC20.safeTransfer(token, msg.sender, amount);

@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\Workspace\\bss_smart_contract\\contracts\\BSSCrowdSale.sol": {
-      "lastModificationDate": 1704723511294,
-      "contentHash": "ed2c61ba03def9a7613718aac19d9d0b",
+    "D:\\Nin\\bss_smart_contract\\contracts\\BSSCrowdSale.sol": {
+      "lastModificationDate": 1705378504056,
+      "contentHash": "61ad1c87e67e0fb6e87385205b230d69",
       "sourceName": "contracts/BSSCrowdSale.sol",
       "solcConfig": {
         "version": "0.8.21",
@@ -41,8 +41,8 @@
         "BSSCrowdSale"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
-      "lastModificationDate": 1703683282499,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1703669348496,
       "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -79,8 +79,8 @@
         "Ownable"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
-      "lastModificationDate": 1703683282439,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1703669348452,
       "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -115,8 +115,8 @@
         "IERC20"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
-      "lastModificationDate": 1703683282511,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1703669348508,
       "contentHash": "697fd27924863e77c17dace2179018b2",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
       "solcConfig": {
@@ -155,8 +155,8 @@
         "SafeERC20"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1703683282306,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1703669348363,
       "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -191,8 +191,8 @@
         "Context"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
-      "lastModificationDate": 1703683282291,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1703669348354,
       "contentHash": "79c699f80eb8a9b168cb34e37816f894",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -227,8 +227,8 @@
         "Address"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol": {
-      "lastModificationDate": 1703683282443,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol": {
+      "lastModificationDate": 1703669348455,
       "contentHash": "da291753fa4641f2c5837bfc4aa4c01b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
       "solcConfig": {
@@ -263,8 +263,8 @@
         "IERC20Permit"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Permit.sol": {
-      "lastModificationDate": 1703683282352,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Permit.sol": {
+      "lastModificationDate": 1703669348398,
       "contentHash": "d3f7511a1805398723f36799db2af4e1",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
       "solcConfig": {
@@ -305,8 +305,8 @@
         "ERC20Permit"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
-      "lastModificationDate": 1703683282344,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1703669348389,
       "contentHash": "c6375ef25e84c90b3d15f9ec4eef218f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -346,8 +346,8 @@
         "ERC20"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Nonces.sol": {
-      "lastModificationDate": 1703683282497,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Nonces.sol": {
+      "lastModificationDate": 1703669348495,
       "contentHash": "c32d108058718efb9061b88e83a83f79",
       "sourceName": "@openzeppelin/contracts/utils/Nonces.sol",
       "solcConfig": {
@@ -382,8 +382,8 @@
         "Nonces"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol": {
-      "lastModificationDate": 1703683282315,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol": {
+      "lastModificationDate": 1703669348369,
       "contentHash": "b96e0d7a3c2b185342c7d083d765b61f",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
       "solcConfig": {
@@ -418,8 +418,8 @@
         "ECDSA"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol": {
-      "lastModificationDate": 1703683282317,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol": {
+      "lastModificationDate": 1703669348370,
       "contentHash": "33f2efa11c674f59f4b8365be7a58da9",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
       "solcConfig": {
@@ -458,8 +458,8 @@
         "EIP712"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol": {
-      "lastModificationDate": 1703683282313,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol": {
+      "lastModificationDate": 1703669348368,
       "contentHash": "4aefc698f77ecbace7f401257dfe182d",
       "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
       "solcConfig": {
@@ -496,8 +496,8 @@
         "IERC721Errors"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
-      "lastModificationDate": 1703683282441,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1703669348453,
       "contentHash": "4c02fa6f7ae7b6c289cef80424f0c875",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -534,8 +534,8 @@
         "IERC20Metadata"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\ShortStrings.sol": {
-      "lastModificationDate": 1703683282513,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\ShortStrings.sol": {
+      "lastModificationDate": 1703669348509,
       "contentHash": "1b71929454f558e486d1f4f2471f29d4",
       "sourceName": "@openzeppelin/contracts/utils/ShortStrings.sol",
       "solcConfig": {
@@ -572,8 +572,8 @@
         "ShortStrings"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC5267.sol": {
-      "lastModificationDate": 1703683282459,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC5267.sol": {
+      "lastModificationDate": 1703669348466,
       "contentHash": "94364524cb1a39dcbc3d3afff6d8e53e",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC5267.sol",
       "solcConfig": {
@@ -608,8 +608,8 @@
         "IERC5267"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\MessageHashUtils.sol": {
-      "lastModificationDate": 1703683282493,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\MessageHashUtils.sol": {
+      "lastModificationDate": 1703669348492,
       "contentHash": "9e5eec59eaffa554d6cca561dcb914eb",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol",
       "solcConfig": {
@@ -646,8 +646,8 @@
         "MessageHashUtils"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\StorageSlot.sol": {
-      "lastModificationDate": 1703683282518,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\StorageSlot.sol": {
+      "lastModificationDate": 1703669348511,
       "contentHash": "08cbccfefa284405c12b4bfa8c8c9c2b",
       "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
       "solcConfig": {
@@ -682,8 +682,8 @@
         "StorageSlot"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
-      "lastModificationDate": 1703683282519,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1703669348512,
       "contentHash": "ba57ff4ddf1d9cae9d2009792795b7f6",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -721,8 +721,8 @@
         "Strings"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
-      "lastModificationDate": 1703683282489,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1703669348490,
       "contentHash": "718fa8ba0ff269c92e364c1429d9de57",
       "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
       "solcConfig": {
@@ -757,8 +757,8 @@
         "Math"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SignedMath.sol": {
-      "lastModificationDate": 1703683282516,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SignedMath.sol": {
+      "lastModificationDate": 1703669348510,
       "contentHash": "b6c6bdc7aaca4fe5b680760a72e09d3e",
       "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
       "solcConfig": {
@@ -793,85 +793,8 @@
         "SignedMath"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Burnable.sol": {
-      "lastModificationDate": 1703683282346,
-      "contentHash": "273d8d24b06f67207dd5f35c3a0c1086",
-      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../ERC20.sol",
-        "../../../utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "ERC20Burnable"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Pausable.sol": {
-      "lastModificationDate": 1703683282501,
-      "contentHash": "24e52f6ef3868e6fca664a423140bee9",
-      "sourceName": "@openzeppelin/contracts/utils/Pausable.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Pausable"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Pausable.sol": {
-      "lastModificationDate": 1703683282350,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Pausable.sol": {
+      "lastModificationDate": 1703669348396,
       "contentHash": "64b7606ccba31af7e49e3b2d8af1b948",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol",
       "solcConfig": {
@@ -909,8 +832,351 @@
         "ERC20Pausable"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\contracts\\USDT.sol": {
-      "lastModificationDate": 1704720462337,
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\Pausable.sol": {
+      "lastModificationDate": 1703669348501,
+      "contentHash": "24e52f6ef3868e6fca664a423140bee9",
+      "sourceName": "@openzeppelin/contracts/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\AccessControl.sol": {
+      "lastModificationDate": 1703669348350,
+      "contentHash": "4c80b7fdf559a9a348e832a57d072a0b",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1703669348384,
+      "contentHash": "6a55c353946e471d9792965d06208295",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\IAccessControl.sol": {
+      "lastModificationDate": 1703669348426,
+      "contentHash": "e3a14b0714caaaa82d58fa0bc3756079",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1703669348446,
+      "contentHash": "de0163561b417b800d01749cbbe2147e",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\extensions\\IAccessControlEnumerable.sol": {
+      "lastModificationDate": 1703669348428,
+      "contentHash": "dee593036d921a6c80dde00be56a8e69",
+      "sourceName": "@openzeppelin/contracts/access/extensions/IAccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IAccessControlEnumerable"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\extensions\\AccessControlEnumerable.sol": {
+      "lastModificationDate": 1703669348352,
+      "contentHash": "2e7f67add6ecddc7e65b052401fdb9eb",
+      "sourceName": "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlEnumerable.sol",
+        "../AccessControl.sol",
+        "../../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol": {
+      "lastModificationDate": 1703669348372,
+      "contentHash": "99b208f3f285702e96243d329411c5de",
+      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\contracts\\Vault.sol": {
+      "lastModificationDate": 1703648500064,
+      "contentHash": "937f28d08a0775f24a108b4e0ae4edb0",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.8.21",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "D:\\Nin\\bss_smart_contract\\contracts\\USDT.sol": {
+      "lastModificationDate": 1704336867317,
       "contentHash": "88ad89670d0366d0fc9aae9694ec0860",
       "sourceName": "contracts/USDT.sol",
       "solcConfig": {
@@ -951,10 +1217,10 @@
         "USDT"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\contracts\\Vault.sol": {
-      "lastModificationDate": 1703683269310,
-      "contentHash": "937f28d08a0775f24a108b4e0ae4edb0",
-      "sourceName": "contracts/Vault.sol",
+    "D:\\Nin\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\ERC20Burnable.sol": {
+      "lastModificationDate": 1703669348390,
+      "contentHash": "273d8d24b06f67207dd5f35c3a0c1086",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
       "solcConfig": {
         "version": "0.8.21",
         "settings": {
@@ -980,284 +1246,18 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
-        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "@openzeppelin/contracts/access/Ownable.sol",
-        "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol"
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
       ],
       "artifacts": [
-        "Vault"
+        "ERC20Burnable"
       ]
     },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\extensions\\AccessControlEnumerable.sol": {
-      "lastModificationDate": 1703683282285,
-      "contentHash": "2e7f67add6ecddc7e65b052401fdb9eb",
-      "sourceName": "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IAccessControlEnumerable.sol",
-        "../AccessControl.sol",
-        "../../utils/structs/EnumerableSet.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "AccessControlEnumerable"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\AccessControl.sol": {
-      "lastModificationDate": 1703683282282,
-      "contentHash": "4c80b7fdf559a9a348e832a57d072a0b",
-      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IAccessControl.sol",
-        "../utils/Context.sol",
-        "../utils/introspection/ERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "AccessControl"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol": {
-      "lastModificationDate": 1703683282321,
-      "contentHash": "99b208f3f285702e96243d329411c5de",
-      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "EnumerableSet"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\extensions\\IAccessControlEnumerable.sol": {
-      "lastModificationDate": 1703683282401,
-      "contentHash": "dee593036d921a6c80dde00be56a8e69",
-      "sourceName": "@openzeppelin/contracts/access/extensions/IAccessControlEnumerable.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../IAccessControl.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IAccessControlEnumerable"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
-      "lastModificationDate": 1703683282334,
-      "contentHash": "6a55c353946e471d9792965d06208295",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "ERC165"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\access\\IAccessControl.sol": {
-      "lastModificationDate": 1703683282398,
-      "contentHash": "e3a14b0714caaaa82d58fa0bc3756079",
-      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IAccessControl"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
-      "lastModificationDate": 1703683282432,
-      "contentHash": "de0163561b417b800d01749cbbe2147e",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
-      "solcConfig": {
-        "version": "0.8.21",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IERC165"
-      ]
-    },
-    "D:\\Workspace\\bss_smart_contract\\contracts\\BSSToken.sol": {
-      "lastModificationDate": 1703433038084,
+    "D:\\Nin\\bss_smart_contract\\contracts\\BSSToken.sol": {
+      "lastModificationDate": 1704335073478,
       "contentHash": "ab0e517ce213bc169c400b565557a60b",
       "sourceName": "contracts/BSSToken.sol",
       "solcConfig": {
