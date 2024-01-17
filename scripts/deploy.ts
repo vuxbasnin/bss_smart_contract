@@ -29,8 +29,8 @@ async function main() {
     //deploy ICO
     const ICO = await ethers.getContractFactory('BSSCrowdSale');
     const ico = await ICO.deploy(
-        1000,
-        100,
+        10000,
+        10,
         '0x54cA83bcD2b8b756eD272D95f0f5fd44F87adc99',
         '0x8c22ca2e9Fe108619058d5B02070aC603D7eD886'
     );

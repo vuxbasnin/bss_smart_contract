@@ -67,7 +67,7 @@ contract BSSCrowdSale is Ownable {
     function buyTokenByUSDT(uint256 _usdtAmount) external {
         uint256 amount = getTokenAmountUSDT(_usdtAmount);
         require(
-            msg.sender.balance >= _usdtAmount,
+            token.balanceOf(address(this)) >= _usdtAmount,
             "Insufficient account balance usdt!"
         );
         require(amount > 0, "Amount is zero!");
