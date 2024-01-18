@@ -76,7 +76,7 @@ contract BSSCrowdSale is Ownable {
             token.balanceOf(address(this)) >= amount,
             "Insufficient account balance token!"
         );
-        SafeERC20.safeTransferFrom(token, msg.sender, wallet, _usdtAmount);
+        SafeERC20.safeTransferFrom(usdtToken, msg.sender, wallet, _usdtAmount);
         SafeERC20.safeTransfer(token, msg.sender, amount);
         emit BuyTokenByUSDT(msg.sender, amount);
     }
