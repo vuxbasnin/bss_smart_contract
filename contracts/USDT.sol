@@ -7,6 +7,12 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
+/**
+ * @title USDT contract test ICO, buy, sale NFT
+ * @author vuxbasnin
+ * @notice code same BSSToken contract
+ */
+
 contract USDT is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit {
     constructor()
         ERC20("USDT", "USDT")

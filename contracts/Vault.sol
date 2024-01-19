@@ -5,13 +5,19 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol";
 
+/**
+ * @title prevent any one can interactive with contract container money
+ * @author vuxbasnin
+ * @notice must set role for address sender can withdraw
+ */
+
 contract Vault is Ownable, AccessControlEnumerable {
     
     constructor() Ownable(_msgSender()) {
         _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
     }
 
-    IERC20 private token; //set token can deposit or withdraw
+    IERC20 private token;   //set token can deposit or withdraw
     uint256 public maxWithdrawAmount;
     bool public withdrawEnabled;
     bytes32 public constant WITHDRAWER_ROLE = keccak256("WITHDRAWER_ROLE"); //access role

@@ -5,6 +5,12 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+/**
+ * @title this contract use to ICO
+ * @author vuxbasnin
+ * @notice must set token usdt can buy ICO
+ */
+
 contract BSSCrowdSale is Ownable {
     using SafeERC20 for IERC20;
     address payable public wallet;
