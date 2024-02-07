@@ -27,15 +27,21 @@ async function main() {
     // Config.setConfig(network + '.USDT', await usdt.getAddress());
 
     //deploy ICO
-    const ICO = await ethers.getContractFactory('BSSCrowdSale');
-    const ico = await ICO.deploy(
-        10000,
-        10,
-        '0x54cA83bcD2b8b756eD272D95f0f5fd44F87adc99',
-        '0x8c22ca2e9Fe108619058d5B02070aC603D7eD886'
-    );
-    console.log('ICO address: ', await ico.getAddress());
-    Config.setConfig(network + '.ICO', await ico.getAddress());
+    // const ICO = await ethers.getContractFactory('BSSCrowdSale');
+    // const ico = await ICO.deploy(
+    //     10000,
+    //     10,
+    //     '0x54cA83bcD2b8b756eD272D95f0f5fd44F87adc99',
+    //     '0x8c22ca2e9Fe108619058d5B02070aC603D7eD886'
+    // );
+    // console.log('ICO address: ', await ico.getAddress());
+    // Config.setConfig(network + '.ICO', await ico.getAddress());
+
+    //deploy Eye NFT
+    const NFT = await ethers.getContractFactory('Eye');
+    const nft = await NFT.deploy();
+    console.log('NFT address: ', await nft.getAddress());
+    Config.setConfig(network + '.NFT', await nft.getAddress());
 
     await Config.updateConfig();
 }

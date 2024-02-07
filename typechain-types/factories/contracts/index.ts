@@ -3,5 +3,6 @@
 /* eslint-disable */
 export { BSSCrowdSale__factory } from "./BSSCrowdSale__factory";
 export { BSSToken__factory } from "./BSSToken__factory";
+export { Eye__factory } from "./Eye__factory";
 export { USDT__factory } from "./USDT__factory";
 export { Vault__factory } from "./Vault__factory";

@@ -3,5 +3,6 @@
 /* eslint-disable */
 export type { BSSCrowdSale } from "./BSSCrowdSale";
 export type { BSSToken } from "./BSSToken";
+export type { Eye } from "./Eye";
 export type { USDT } from "./USDT";
 export type { Vault } from "./Vault";
