@@ -30,7 +30,9 @@ export interface EyeInterface extends Interface {
       | "MINTER_ROLE"
       | "approve"
       | "balanceOf"
+      | "baseExtension"
       | "burn"
+      | "cost"
       | "getApproved"
       | "getRoleAdmin"
       | "grantRole"
@@ -38,13 +40,19 @@ export interface EyeInterface extends Interface {
       | "isApprovedForAll"
       | "listTokenIds"
       | "name"
+      | "notRevealedUri"
+      | "owner"
       | "ownerOf"
+      | "renounceOwnership"
       | "renounceRole"
+      | "reveal"
+      | "revealed"
       | "revokeRole"
       | "safeMint"
       | "safeTransferFrom(address,address,uint256)"
       | "safeTransferFrom(address,address,uint256,bytes)"
       | "setApprovalForAll"
+      | "setBaseExtension"
       | "setBaseUri"
       | "supportsInterface"
       | "symbol"
@@ -53,6 +61,7 @@ export interface EyeInterface extends Interface {
       | "tokenURI"
       | "totalSupply"
       | "transferFrom"
+      | "transferOwnership"
   ): FunctionFragment;
 
   getEvent(
@@ -62,6 +71,7 @@ export interface EyeInterface extends Interface {
       | "BatchMetadataUpdate"
       | "MetadataUpdate"
       | "Mint"
+      | "OwnershipTransferred"
       | "RoleAdminChanged"
       | "RoleGranted"
       | "RoleRevoked"
@@ -84,7 +94,12 @@ export interface EyeInterface extends Interface {
     functionFragment: "balanceOf",
     values: [AddressLike]
   ): string;
+  encodeFunctionData(
+    functionFragment: "baseExtension",
+    values?: undefined
+  ): string;
   encodeFunctionData(functionFragment: "burn", values: [BigNumberish]): string;
+  encodeFunctionData(functionFragment: "cost", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "getApproved",
     values: [BigNumberish]
@@ -111,13 +126,24 @@ export interface EyeInterface extends Interface {
   ): string;
   encodeFunctionData(functionFragment: "name", values?: undefined): string;
   encodeFunctionData(
+    functionFragment: "notRevealedUri",
+    values?: undefined
+  ): string;
+  encodeFunctionData(functionFragment: "owner", values?: undefined): string;
+  encodeFunctionData(
     functionFragment: "ownerOf",
     values: [BigNumberish]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "renounceOwnership",
+    values?: undefined
   ): string;
   encodeFunctionData(
     functionFragment: "renounceRole",
     values: [BytesLike, AddressLike]
   ): string;
+  encodeFunctionData(functionFragment: "reveal", values?: undefined): string;
+  encodeFunctionData(functionFragment: "revealed", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "revokeRole",
     values: [BytesLike, AddressLike]
@@ -137,6 +163,10 @@ export interface EyeInterface extends Interface {
   encodeFunctionData(
     functionFragment: "setApprovalForAll",
     values: [AddressLike, boolean]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "setBaseExtension",
+    values: [string]
   ): string;
   encodeFunctionData(functionFragment: "setBaseUri", values: [string]): string;
   encodeFunctionData(
@@ -164,6 +194,10 @@ export interface EyeInterface extends Interface {
     functionFragment: "transferFrom",
     values: [AddressLike, AddressLike, BigNumberish]
   ): string;
+  encodeFunctionData(
+    functionFragment: "transferOwnership",
+    values: [AddressLike]
+  ): string;
 
   decodeFunctionResult(
     functionFragment: "DEFAULT_ADMIN_ROLE",
@@ -175,7 +209,12 @@ export interface EyeInterface extends Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "approve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "balanceOf", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "baseExtension",
+    data: BytesLike
+  ): Result;
   decodeFunctionResult(functionFragment: "burn", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "cost", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "getApproved",
     data: BytesLike
@@ -195,11 +234,22 @@ export interface EyeInterface extends Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "name", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "notRevealedUri",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(functionFragment: "owner", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "ownerOf", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "renounceOwnership",
+    data: BytesLike
+  ): Result;
   decodeFunctionResult(
     functionFragment: "renounceRole",
     data: BytesLike
   ): Result;
+  decodeFunctionResult(functionFragment: "reveal", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "revealed", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "revokeRole", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "safeMint", data: BytesLike): Result;
   decodeFunctionResult(
@@ -212,6 +262,10 @@ export interface EyeInterface extends Interface {
   ): Result;
   decodeFunctionResult(
     functionFragment: "setApprovalForAll",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
+    functionFragment: "setBaseExtension",
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "setBaseUri", data: BytesLike): Result;
@@ -235,6 +289,10 @@ export interface EyeInterface extends Interface {
   ): Result;
   decodeFunctionResult(
     functionFragment: "transferFrom",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
+    functionFragment: "transferOwnership",
     data: BytesLike
   ): Result;
 }
@@ -318,6 +376,19 @@ export namespace MintEvent {
     _to: string;
     _hero_type: bigint;
     _tokenId: bigint;
+  }
+  export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>;
+  export type Filter = TypedDeferredTopicFilter<Event>;
+  export type Log = TypedEventLog<Event>;
+  export type LogDescription = TypedLogDescription<Event>;
+}
+
+export namespace OwnershipTransferredEvent {
+  export type InputTuple = [previousOwner: AddressLike, newOwner: AddressLike];
+  export type OutputTuple = [previousOwner: string, newOwner: string];
+  export interface OutputObject {
+    previousOwner: string;
+    newOwner: string;
   }
   export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>;
   export type Filter = TypedDeferredTopicFilter<Event>;
@@ -456,7 +527,11 @@ export interface Eye extends BaseContract {
 
   balanceOf: TypedContractMethod<[owner: AddressLike], [bigint], "view">;
 
+  baseExtension: TypedContractMethod<[], [string], "view">;
+
   burn: TypedContractMethod<[tokenId: BigNumberish], [void], "nonpayable">;
+
+  cost: TypedContractMethod<[], [bigint], "view">;
 
   getApproved: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
 
@@ -484,13 +559,23 @@ export interface Eye extends BaseContract {
 
   name: TypedContractMethod<[], [string], "view">;
 
+  notRevealedUri: TypedContractMethod<[], [string], "view">;
+
+  owner: TypedContractMethod<[], [string], "view">;
+
   ownerOf: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+
+  renounceOwnership: TypedContractMethod<[], [void], "nonpayable">;
 
   renounceRole: TypedContractMethod<
     [role: BytesLike, callerConfirmation: AddressLike],
     [void],
     "nonpayable"
   >;
+
+  reveal: TypedContractMethod<[], [void], "nonpayable">;
+
+  revealed: TypedContractMethod<[], [boolean], "view">;
 
   revokeRole: TypedContractMethod<
     [role: BytesLike, account: AddressLike],
@@ -527,6 +612,12 @@ export interface Eye extends BaseContract {
     "nonpayable"
   >;
 
+  setBaseExtension: TypedContractMethod<
+    [_newBaseEx: string],
+    [void],
+    "nonpayable"
+  >;
+
   setBaseUri: TypedContractMethod<[_uriSet: string], [void], "nonpayable">;
 
   supportsInterface: TypedContractMethod<
@@ -545,12 +636,18 @@ export interface Eye extends BaseContract {
     "view"
   >;
 
-  tokenURI: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+  tokenURI: TypedContractMethod<[_tokenId: BigNumberish], [string], "view">;
 
   totalSupply: TypedContractMethod<[], [bigint], "view">;
 
   transferFrom: TypedContractMethod<
     [from: AddressLike, to: AddressLike, tokenId: BigNumberish],
+    [void],
+    "nonpayable"
+  >;
+
+  transferOwnership: TypedContractMethod<
+    [newOwner: AddressLike],
     [void],
     "nonpayable"
   >;
@@ -576,8 +673,14 @@ export interface Eye extends BaseContract {
     nameOrSignature: "balanceOf"
   ): TypedContractMethod<[owner: AddressLike], [bigint], "view">;
   getFunction(
+    nameOrSignature: "baseExtension"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
     nameOrSignature: "burn"
   ): TypedContractMethod<[tokenId: BigNumberish], [void], "nonpayable">;
+  getFunction(
+    nameOrSignature: "cost"
+  ): TypedContractMethod<[], [bigint], "view">;
   getFunction(
     nameOrSignature: "getApproved"
   ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
@@ -612,8 +715,17 @@ export interface Eye extends BaseContract {
     nameOrSignature: "name"
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
+    nameOrSignature: "notRevealedUri"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
+    nameOrSignature: "owner"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
     nameOrSignature: "ownerOf"
   ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+  getFunction(
+    nameOrSignature: "renounceOwnership"
+  ): TypedContractMethod<[], [void], "nonpayable">;
   getFunction(
     nameOrSignature: "renounceRole"
   ): TypedContractMethod<
@@ -621,6 +733,12 @@ export interface Eye extends BaseContract {
     [void],
     "nonpayable"
   >;
+  getFunction(
+    nameOrSignature: "reveal"
+  ): TypedContractMethod<[], [void], "nonpayable">;
+  getFunction(
+    nameOrSignature: "revealed"
+  ): TypedContractMethod<[], [boolean], "view">;
   getFunction(
     nameOrSignature: "revokeRole"
   ): TypedContractMethod<
@@ -662,6 +780,9 @@ export interface Eye extends BaseContract {
     "nonpayable"
   >;
   getFunction(
+    nameOrSignature: "setBaseExtension"
+  ): TypedContractMethod<[_newBaseEx: string], [void], "nonpayable">;
+  getFunction(
     nameOrSignature: "setBaseUri"
   ): TypedContractMethod<[_uriSet: string], [void], "nonpayable">;
   getFunction(
@@ -682,7 +803,7 @@ export interface Eye extends BaseContract {
   >;
   getFunction(
     nameOrSignature: "tokenURI"
-  ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+  ): TypedContractMethod<[_tokenId: BigNumberish], [string], "view">;
   getFunction(
     nameOrSignature: "totalSupply"
   ): TypedContractMethod<[], [bigint], "view">;
@@ -693,6 +814,9 @@ export interface Eye extends BaseContract {
     [void],
     "nonpayable"
   >;
+  getFunction(
+    nameOrSignature: "transferOwnership"
+  ): TypedContractMethod<[newOwner: AddressLike], [void], "nonpayable">;
 
   getEvent(
     key: "Approval"
@@ -728,6 +852,13 @@ export interface Eye extends BaseContract {
     MintEvent.InputTuple,
     MintEvent.OutputTuple,
     MintEvent.OutputObject
+  >;
+  getEvent(
+    key: "OwnershipTransferred"
+  ): TypedContractEvent<
+    OwnershipTransferredEvent.InputTuple,
+    OwnershipTransferredEvent.OutputTuple,
+    OwnershipTransferredEvent.OutputObject
   >;
   getEvent(
     key: "RoleAdminChanged"
@@ -812,6 +943,17 @@ export interface Eye extends BaseContract {
       MintEvent.InputTuple,
       MintEvent.OutputTuple,
       MintEvent.OutputObject
+    >;
+
+    "OwnershipTransferred(address,address)": TypedContractEvent<
+      OwnershipTransferredEvent.InputTuple,
+      OwnershipTransferredEvent.OutputTuple,
+      OwnershipTransferredEvent.OutputObject
+    >;
+    OwnershipTransferred: TypedContractEvent<
+      OwnershipTransferredEvent.InputTuple,
+      OwnershipTransferredEvent.OutputTuple,
+      OwnershipTransferredEvent.OutputObject
     >;
 
     "RoleAdminChanged(bytes32,bytes32,bytes32)": TypedContractEvent<

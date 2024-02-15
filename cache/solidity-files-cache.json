@@ -1724,8 +1724,8 @@
       ]
     },
     "D:\\Workspace\\bss_smart_contract\\contracts\\Eye.sol": {
-      "lastModificationDate": 1707229994827,
-      "contentHash": "16590d6bf230b7b015b44b81921409a8",
+      "lastModificationDate": 1708011832415,
+      "contentHash": "7fefc0083a6b71075fbb396f9b2d9f6b",
       "sourceName": "contracts/Eye.sol",
       "solcConfig": {
         "version": "0.8.21",
@@ -1756,7 +1756,8 @@
         "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
         "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
         "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        "@openzeppelin/contracts/access/AccessControl.sol"
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
