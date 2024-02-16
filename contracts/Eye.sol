@@ -19,10 +19,10 @@ contract Eye is
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     uint256 private tokenId;
     string private baseURI;
+    string public notRevealedUri;
     string public baseExtension = ".json";
     bool public revealed = false;
-    string public notRevealedUri;
-    uint256 public cost = 0.05 ether;
+    bool public pause = false;
 
     event Mint(address _to, uint256 _hero_type, uint256 _tokenId);
 
@@ -34,6 +34,7 @@ contract Eye is
         address to,
         uint256 _heroType
     ) public onlyRole(MINTER_ROLE) {
+        require(!pause);
         _safeMint(to, tokenId);
         emit Mint(to, _heroType, tokenId);
         tokenId++;
@@ -54,16 +55,25 @@ contract Eye is
         return baseURI;
     }
 
-    function setBaseUri(string memory _uriSet) public {
+    //only owner can call this function
+    function setBaseUri(string memory _uriSet) public onlyOwner {
         baseURI = _uriSet;
     }
 
-    function setBaseExtension(string memory _newBaseEx) public {
+    function setNotRevealUri(string memory _notRevealUri) public onlyOwner {
+        notRevealedUri = _notRevealUri;
+    }
+
+    function setBaseExtension(string memory _newBaseEx) public onlyOwner {
         baseExtension = _newBaseEx;
     }
 
     function reveal() public onlyOwner {
         revealed = true;
+    }
+
+    function pauseMint(bool _state) public onlyOwner {
+        pause = _state;
     }
 
     // The following functions are overrides required by Solidity.
@@ -86,6 +96,7 @@ contract Eye is
     function tokenURI(
         uint256 _tokenId
     ) public view override(ERC721, ERC721URIStorage) returns (string memory) {
+
         if (revealed == false) {
             return notRevealedUri;
         }

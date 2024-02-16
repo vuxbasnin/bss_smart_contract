@@ -32,7 +32,6 @@ export interface EyeInterface extends Interface {
       | "balanceOf"
       | "baseExtension"
       | "burn"
-      | "cost"
       | "getApproved"
       | "getRoleAdmin"
       | "grantRole"
@@ -43,6 +42,8 @@ export interface EyeInterface extends Interface {
       | "notRevealedUri"
       | "owner"
       | "ownerOf"
+      | "pause"
+      | "pauseMint"
       | "renounceOwnership"
       | "renounceRole"
       | "reveal"
@@ -54,6 +55,7 @@ export interface EyeInterface extends Interface {
       | "setApprovalForAll"
       | "setBaseExtension"
       | "setBaseUri"
+      | "setNotRevealUri"
       | "supportsInterface"
       | "symbol"
       | "tokenByIndex"
@@ -99,7 +101,6 @@ export interface EyeInterface extends Interface {
     values?: undefined
   ): string;
   encodeFunctionData(functionFragment: "burn", values: [BigNumberish]): string;
-  encodeFunctionData(functionFragment: "cost", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "getApproved",
     values: [BigNumberish]
@@ -134,6 +135,8 @@ export interface EyeInterface extends Interface {
     functionFragment: "ownerOf",
     values: [BigNumberish]
   ): string;
+  encodeFunctionData(functionFragment: "pause", values?: undefined): string;
+  encodeFunctionData(functionFragment: "pauseMint", values: [boolean]): string;
   encodeFunctionData(
     functionFragment: "renounceOwnership",
     values?: undefined
@@ -169,6 +172,10 @@ export interface EyeInterface extends Interface {
     values: [string]
   ): string;
   encodeFunctionData(functionFragment: "setBaseUri", values: [string]): string;
+  encodeFunctionData(
+    functionFragment: "setNotRevealUri",
+    values: [string]
+  ): string;
   encodeFunctionData(
     functionFragment: "supportsInterface",
     values: [BytesLike]
@@ -214,7 +221,6 @@ export interface EyeInterface extends Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "burn", data: BytesLike): Result;
-  decodeFunctionResult(functionFragment: "cost", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "getApproved",
     data: BytesLike
@@ -240,6 +246,8 @@ export interface EyeInterface extends Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "owner", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "ownerOf", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "pause", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "pauseMint", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "renounceOwnership",
     data: BytesLike
@@ -269,6 +277,10 @@ export interface EyeInterface extends Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "setBaseUri", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "setNotRevealUri",
+    data: BytesLike
+  ): Result;
   decodeFunctionResult(
     functionFragment: "supportsInterface",
     data: BytesLike
@@ -531,8 +543,6 @@ export interface Eye extends BaseContract {
 
   burn: TypedContractMethod<[tokenId: BigNumberish], [void], "nonpayable">;
 
-  cost: TypedContractMethod<[], [bigint], "view">;
-
   getApproved: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
 
   getRoleAdmin: TypedContractMethod<[role: BytesLike], [string], "view">;
@@ -564,6 +574,10 @@ export interface Eye extends BaseContract {
   owner: TypedContractMethod<[], [string], "view">;
 
   ownerOf: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+
+  pause: TypedContractMethod<[], [boolean], "view">;
+
+  pauseMint: TypedContractMethod<[_state: boolean], [void], "nonpayable">;
 
   renounceOwnership: TypedContractMethod<[], [void], "nonpayable">;
 
@@ -619,6 +633,12 @@ export interface Eye extends BaseContract {
   >;
 
   setBaseUri: TypedContractMethod<[_uriSet: string], [void], "nonpayable">;
+
+  setNotRevealUri: TypedContractMethod<
+    [_notRevealUri: string],
+    [void],
+    "nonpayable"
+  >;
 
   supportsInterface: TypedContractMethod<
     [interfaceId: BytesLike],
@@ -679,9 +699,6 @@ export interface Eye extends BaseContract {
     nameOrSignature: "burn"
   ): TypedContractMethod<[tokenId: BigNumberish], [void], "nonpayable">;
   getFunction(
-    nameOrSignature: "cost"
-  ): TypedContractMethod<[], [bigint], "view">;
-  getFunction(
     nameOrSignature: "getApproved"
   ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
   getFunction(
@@ -723,6 +740,12 @@ export interface Eye extends BaseContract {
   getFunction(
     nameOrSignature: "ownerOf"
   ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
+  getFunction(
+    nameOrSignature: "pause"
+  ): TypedContractMethod<[], [boolean], "view">;
+  getFunction(
+    nameOrSignature: "pauseMint"
+  ): TypedContractMethod<[_state: boolean], [void], "nonpayable">;
   getFunction(
     nameOrSignature: "renounceOwnership"
   ): TypedContractMethod<[], [void], "nonpayable">;
@@ -785,6 +808,9 @@ export interface Eye extends BaseContract {
   getFunction(
     nameOrSignature: "setBaseUri"
   ): TypedContractMethod<[_uriSet: string], [void], "nonpayable">;
+  getFunction(
+    nameOrSignature: "setNotRevealUri"
+  ): TypedContractMethod<[_notRevealUri: string], [void], "nonpayable">;
   getFunction(
     nameOrSignature: "supportsInterface"
   ): TypedContractMethod<[interfaceId: BytesLike], [boolean], "view">;
