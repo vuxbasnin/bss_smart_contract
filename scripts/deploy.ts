@@ -38,10 +38,19 @@ async function main() {
     // Config.setConfig(network + '.ICO', await ico.getAddress());
 
     //deploy Eye NFT
-    const NFT = await ethers.getContractFactory('Eye');
-    const nft = await NFT.deploy();
-    console.log('NFT address: ', await nft.getAddress());
-    Config.setConfig(network + '.NFT', await nft.getAddress());
+    // const NFT = await ethers.getContractFactory('Eye');
+    // const nft = await NFT.deploy();
+    // console.log('NFT address: ', await nft.getAddress());
+    // Config.setConfig(network + '.NFT', await nft.getAddress());
+
+    //deploy Eye Marketplace
+    const EYEMKP = await ethers.getContractFactory('EyeMarketplace');
+    const eyeMkp = await EYEMKP.deploy(
+        '0x8c22ca2e9Fe108619058d5B02070aC603D7eD886',
+        '0xbEafbb18140b37f56614e1821B23e0ef4b94bD62'
+    );
+    console.log('Eye NFT marketplace address: ', await eyeMkp.getAddress());
+    Config.setConfig(network + '.NFTMarketplace', await eyeMkp.getAddress());
 
     await Config.updateConfig();
 }

@@ -84,6 +84,8 @@ export type { BSSToken } from "./contracts/BSSToken";
 export { BSSToken__factory } from "./factories/contracts/BSSToken__factory";
 export type { Eye } from "./contracts/Eye";
 export { Eye__factory } from "./factories/contracts/Eye__factory";
+export type { EyeMarketplace } from "./contracts/EyeMarketplace";
+export { EyeMarketplace__factory } from "./factories/contracts/EyeMarketplace__factory";
 export type { USDT } from "./contracts/USDT";
 export { USDT__factory } from "./factories/contracts/USDT__factory";
 export type { Vault } from "./contracts/Vault";

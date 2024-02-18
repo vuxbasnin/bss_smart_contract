@@ -4,5 +4,6 @@
 export type { BSSCrowdSale } from "./BSSCrowdSale";
 export type { BSSToken } from "./BSSToken";
 export type { Eye } from "./Eye";
+export type { EyeMarketplace } from "./EyeMarketplace";
 export type { USDT } from "./USDT";
 export type { Vault } from "./Vault";

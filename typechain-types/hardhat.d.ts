@@ -170,6 +170,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Eye__factory>;
     getContractFactory(
+      name: "EyeMarketplace",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.EyeMarketplace__factory>;
+    getContractFactory(
       name: "USDT",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.USDT__factory>;
@@ -374,6 +378,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Eye>;
     getContractAt(
+      name: "EyeMarketplace",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.EyeMarketplace>;
+    getContractAt(
       name: "USDT",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -541,6 +550,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Eye>;
     deployContract(
+      name: "EyeMarketplace",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.EyeMarketplace>;
+    deployContract(
       name: "USDT",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.USDT>;
@@ -744,6 +757,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Eye>;
+    deployContract(
+      name: "EyeMarketplace",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.EyeMarketplace>;
     deployContract(
       name: "USDT",
       args: any[],
